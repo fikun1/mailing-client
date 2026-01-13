@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 
 
 
-server = smtplib.SMTP('smtp.gmail.com', 25)
+server = smtplib.SMTP('smtp.gmail.com',587)
 
 server.ehlo()
 
