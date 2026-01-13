@@ -20,5 +20,6 @@ msg['From'] = 'testinprojects7@gmail.com'
 msg['To'] = 'davidoladejo200@gmail.com'
 msg['Subject'] = 'Test Email'
 
-
+with open('message.txt', 'r') as f:
+    message = f.read()
 

@@ -1,0 +1,5 @@
+Hello David! 
+
+This is a mail sent using python by you! 
+
+Keep building projects using python!
