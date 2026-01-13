@@ -23,3 +23,11 @@ msg['Subject'] = 'Test Email'
 with open('message.txt', 'r') as f:
     message = f.read()
 
+msg.attach(MIMEText(message, 'plain'))
+
+filename = 'Attack Map.jpeg'
+attachment = open(filename, 'rb')
+
+
+
+
