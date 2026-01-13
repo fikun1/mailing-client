@@ -28,6 +28,13 @@ msg.attach(MIMEText(message, 'plain'))
 filename = 'Attack Map.jpeg'
 attachment = open(filename, 'rb')
 
+p = MIMEBase('application', 'octet-stream')
+p.set_payload(attachment.read())
+
+encoders.encode_base64(p)
+p.add_header('Content-Disposition', f'attachment; filename={filename}')
+msg.attach(p)
+
 
 
 
