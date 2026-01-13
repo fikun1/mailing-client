@@ -1,11 +1,11 @@
 import smtplib
 
-#server = smtplib.SMTP('smtp.gmail.com', 25)
+server = smtplib.SMTP('smtp.gmail.com', 25)
 
-#server.ehlo()
+server.ehlo()
 
-#with open('password.txt', 'r') as f:
-    #password = f.read()
+with open('password.txt', 'r') as f:
+    password = f.read()
 
-#server.login('testinprojects')
+server.login('testinprojects')
 
