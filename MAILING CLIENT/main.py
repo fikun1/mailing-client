@@ -35,6 +35,9 @@ encoders.encode_base64(p)
 p.add_header('Content-Disposition', f'attachment; filename={filename}')
 msg.attach(p)
 
+text = msg.as_string()
+server.sendmail('testinprojects7@gmail.com', 'davidoladejo200@gmail.com', text)
+
 
 
 
